@@ -1,4 +1,4 @@
-# Udacity ToDos Serverless project
+# Udacity Books Serverless project
 
 ## Project Components
 - Restful API (Lambda Functions, API Gateway, S3 Buckets and DynamoDb)
