@@ -1,15 +1,15 @@
 {
 	"info": {
-		"_postman_id": "269f91b7-7c4b-4794-a14b-7f61fa25b78a",
-		"name": "Udacity C4 Project",
+		"_postman_id": "e9f25916-fbbb-4d03-9058-305381872464",
+		"name": "Udacity Capstone Project",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "TODOs",
+			"name": "BOOKS",
 			"item": [
 				{
-					"name": "Get all todos",
+					"name": "Get all books",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -20,7 +20,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos",
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/books",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -31,14 +31,14 @@
 							],
 							"path": [
 								"dev",
-								"todos"
+								"books"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Create todo",
+					"name": "Create book",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -56,10 +56,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Water flowers\",\n\t\"dueDate\": \"2019-06-11\"\n}"
+							"raw": "{\n\t\"title\": \"Water flowers\",\n\t\"author\": \"someone\"\n}"
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos",
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/books",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -70,16 +70,16 @@
 							],
 							"path": [
 								"dev",
-								"todos"
+								"books"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Update todo",
+					"name": "Update book",
 					"request": {
-						"method": "PUT",
+						"method": "PATCH",
 						"header": [
 							{
 								"key": "Content-Type",
@@ -90,15 +90,15 @@
 							{
 								"key": "Authorization",
 								"type": "text",
-								"value": "Bearer {{authToken}}"
+								"value": "Bearer  {{authToken}}"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Change the world\",\n\t\"dueDate\": \"2019-12-11\",\n\t\"done\": true\n}"
+							"raw": "{\n\t\"title\": \"habib\",\n\t\"author\": \"habib\",\n\t\"description\": \"habib\"\n}"
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos/35dd600f-43c2-4649-903c-615e1586a26f",
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/books/bookId=\"\"",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -109,15 +109,15 @@
 							],
 							"path": [
 								"dev",
-								"todos",
-								"35dd600f-43c2-4649-903c-615e1586a26f"
+								"books",
+								"bookId=\"\""
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "Delete todo",
+					"name": "Delete book",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -138,7 +138,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos/fe671583-4512-45f6-9475-4265c04362fb",
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/books/85be8d80-3a4f-4abf-ae48-74aac4384f39",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -149,8 +149,8 @@
 							],
 							"path": [
 								"dev",
-								"todos",
-								"fe671583-4512-45f6-9475-4265c04362fb"
+								"books",
+								"85be8d80-3a4f-4abf-ae48-74aac4384f39"
 							]
 						}
 					},
@@ -172,7 +172,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/todos/3836b777-9bc4-4429-9b79-ba4e4f5f91c0/attachment",
+							"raw": "https://{{apiId}}.execute-api.us-east-1.amazonaws.com/dev/books/700ac532-f7b2-460d-93e9-d13d04cd4bdf/attachment",
 							"protocol": "https",
 							"host": [
 								"{{apiId}}",
@@ -183,8 +183,8 @@
 							],
 							"path": [
 								"dev",
-								"todos",
-								"3836b777-9bc4-4429-9b79-ba4e4f5f91c0",
+								"books",
+								"700ac532-f7b2-460d-93e9-d13d04cd4bdf",
 								"attachment"
 							]
 						}

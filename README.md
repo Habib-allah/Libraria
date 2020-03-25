@@ -2,7 +2,7 @@
 
 ## Project Components
 - Restful API (Lambda Functions, API Gateway, S3 Buckets and DynamoDb)
-- Client (React)
+- Client (React, Pdf-react)
 
 ## How to run the application
 ### Backend
@@ -23,9 +23,9 @@ npm run start
 ## Deployment details
 API Endpoint (No longer up and running)
 ```
-https://w8zvvkqtp9.execute-api.us-east-1.amazonaws.com/dev/todos
+https://c99b9g7z51.execute-api.us-east-1.amazonaws.com/dev/books
 ```
 Postman Collection
 ```
-Udacity C4 Project.postman_collection.json
+Udacity Capstone Project.postman_collection
 ```
